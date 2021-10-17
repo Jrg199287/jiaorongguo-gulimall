@@ -1,0 +1,35 @@
+#ipAddr: 127.0.0.1
+#spring:
+#  datasource:
+#    username: root
+#    password: 123456
+#    url: jdbc:mysql://${ipAddr}:3306/mall_sms
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.3.1:8848
+##        service: mall-coupon  #这里是针对nacos升级到2.0之后的注册
+##    sentinel:
+##      transport:
+##        dashboard: localhost:8333
+#  application:
+#    name: mall-coupon
+##  zipkin:
+##    base-url: 10.43.1.52:9411/
+##    # 关闭我们自动的服务发现功能
+##    discovery-client-enabled: false
+##    sender:
+##      type: web
+##  sleuth:
+##    sampler:
+##      probability: 1
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/**/*.xml
+#  global-config:
+#    db-config:
+#      id-type: auto
+#
+#server:
+#  port: 7000
+#
