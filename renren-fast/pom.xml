@@ -11,7 +11,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.4.RELEASE</version>
+		<version>2.1.8.RELEASE</version>
 	</parent>
 
 	<properties>
@@ -23,13 +23,13 @@
 		<mssql.version>4.0</mssql.version>
 		<oracle.version>11.2.0.3</oracle.version>
 		<druid.version>1.1.13</druid.version>
-		<quartz.version>2.3.0</quartz.version>
+		<quartz.version>2.3.2</quartz.version>
 		<commons.lang.version>2.6</commons.lang.version>
-		<commons.fileupload.version>1.2.2</commons.fileupload.version>
+		<commons.fileupload.version>1.3.3</commons.fileupload.version>
 		<commons.io.version>2.5</commons.io.version>
 		<commons.codec.version>1.10</commons.codec.version>
 		<commons.configuration.version>1.10</commons.configuration.version>
-		<shiro.version>1.4.0</shiro.version>
+		<shiro.version>1.6.0</shiro.version>
 		<jwt.version>0.7.0</jwt.version>
 		<kaptcha.version>0.0.9</kaptcha.version>
 		<qiniu.version>7.2.23</qiniu.version>
@@ -38,8 +38,8 @@
 		<swagger.version>2.7.0</swagger.version>
 		<joda.time.version>2.9.9</joda.time.version>
 		<gson.version>2.8.5</gson.version>
-		<fastjson.version>1.2.72</fastjson.version>
-		<hutool.version>4.1.1</hutool.version>
+		<fastjson.version>1.2.60</fastjson.version>
+		<hutool.version>4.1.12</hutool.version>
 		<lombok.version>1.18.4</lombok.version>
 
 		<!--wagon plugin 配置-->
@@ -52,6 +52,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.firenay.leave</groupId>
+			<artifactId>mall-common</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
@@ -59,11 +64,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.firenay.leave</groupId>
-			<artifactId>mall-common</artifactId>
-			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -101,7 +101,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.47</version>
+			<version>${mysql.version}</version>
 		</dependency>
 		 <!--oracle驱动-->
 		<dependency>
@@ -287,7 +287,7 @@
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
-				<version>1.1.0</version>
+				<version>1.2.0</version>
 				<!--<executions>-->
 					<!--<execution>-->
 						<!--<phase>package</phase>-->

@@ -1,5 +1,6 @@
 package com.firenay.mall.product;
 
+import com.aliyun.oss.OSSClient;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.firenay.mall.product.dao.AttrGroupDao;
 import com.firenay.mall.product.dao.SkuSaleAttrValueDao;
@@ -17,7 +18,8 @@ import java.util.Arrays;
 
 @SpringBootTest
 public class MallProductApplicationTests {
-
+	@Resource
+	OSSClient ossClient;
 	@Resource
 	private BrandService brandService;
 
@@ -84,5 +86,12 @@ public class MallProductApplicationTests {
 
 		brandService.list(new QueryWrapper<BrandEntity>().eq("brand_id", 1L)).forEach(System.out::println);
 	}
+	/*@Test
+	public void updatePhotos() throws FileNotFoundException {
+		InputStream inputStream = new FileInputStream("D:\\壁纸\\4k123 (14).jpg");
+		ossClient.putObject("jiaorongguo-demo","1.jpg",inputStream);
+		System.out.println("发送成功");
+
+	}*/
 
 }

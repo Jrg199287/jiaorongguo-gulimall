@@ -26,7 +26,7 @@ public class AliyunCloudStorageService extends CloudStorageService {
         this.config = config;
 
         //初始化
-        init();
+        //init();
     }
 
     private void init(){

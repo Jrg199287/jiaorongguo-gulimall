@@ -12,6 +12,11 @@ spring:
     sentinel:
       transport:
         dashboard: localhost:8333
+#    alicloud:
+#          access-key: LTAI5t9TrwTC4NAjh363mSJX
+#          secret-key: UQB1HfznGWO6AefYYYW8uXchzIR60s
+#          oss:
+#            endpoint: oss-cn-hangzhou.aliyuncs.com
   # 指定返回时间的格式化
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
@@ -42,6 +47,12 @@ mybatis-plus:
       # 配置逻辑删除 1代表删除 0代表已删除
       logic-delete-value: 1
       logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    call-setters-on-nulls: true
+    jdbc-type-for-null: 'null'
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 server:
   port: 10001
 logging:

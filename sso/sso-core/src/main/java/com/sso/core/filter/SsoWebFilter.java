@@ -2,12 +2,11 @@ package com.sso.core.filter;
 
 import com.sso.core.conf.Conf;
 import com.sso.core.login.SsoWebLoginHelper;
-import com.sso.core.user.SsoUser;
 import com.sso.core.path.impl.AntPathMatcher;
+import com.sso.core.user.SsoUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.servlet.*;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

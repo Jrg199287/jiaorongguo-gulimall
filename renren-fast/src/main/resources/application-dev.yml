@@ -1,8 +1,10 @@
+ipAddr: 127.0.0.1
 spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         druid:
-            driver-class-name: com.mysql.cj.jdbc.Driver
+            driver-class-name: com.mysql.jdbc.Driver
+            #url: jdbc:mysql://#:3306/gulimall-admin
             url: jdbc:mysql://localhost:3306/mall_admin?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
             username: root
             password: 123456

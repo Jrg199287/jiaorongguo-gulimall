@@ -1,8 +1,8 @@
 package com.xxl.app.sample.test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.xxl.app.sample.test.util.HttpClientUtil;
 import com.sso.core.conf.Conf;
+import com.xxl.app.sample.test.util.HttpClientUtil;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
