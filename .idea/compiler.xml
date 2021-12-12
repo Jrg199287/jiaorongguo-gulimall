@@ -27,7 +27,7 @@
       <module name="jiaorongguo-gulimall" target="1.5" />
       <module name="mall-auth-server" target="1.8" />
       <module name="mall-cart" target="1.8" />
-      <module name="mall-common" target="7" />
+      <module name="mall-common" target="8" />
       <module name="mall-coupon" target="1.8" />
       <module name="mall-gateway" target="1.8" />
       <module name="mall-member" target="1.8" />

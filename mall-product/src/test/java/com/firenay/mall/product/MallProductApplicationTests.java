@@ -1,6 +1,5 @@
 package com.firenay.mall.product;
 
-import com.aliyun.oss.OSSClient;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.firenay.mall.product.dao.AttrGroupDao;
 import com.firenay.mall.product.dao.SkuSaleAttrValueDao;
@@ -18,8 +17,6 @@ import java.util.Arrays;
 
 @SpringBootTest
 public class MallProductApplicationTests {
-	@Resource
-	OSSClient ossClient;
 	@Resource
 	private BrandService brandService;
 

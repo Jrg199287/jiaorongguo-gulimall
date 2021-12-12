@@ -1,6 +1,7 @@
 package com.firenay.mall.product.config;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.pagination.optimize.JsqlParserCountOptimize;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,6 +24,9 @@ public class MybatisConfig {
 		paginationInterceptor.setOverflow(true);
 		// 设置最大单页限制数量，默认 500 条，-1 不受限制
 		paginationInterceptor.setLimit(1000);
+		//开启count和join的优化
+		paginationInterceptor.setCountSqlParser(new JsqlParserCountOptimize(true));
 		return paginationInterceptor;
 	}
+
 }

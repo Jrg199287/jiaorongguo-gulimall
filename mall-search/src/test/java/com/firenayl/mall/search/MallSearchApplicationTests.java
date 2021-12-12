@@ -50,7 +50,7 @@ public class MallSearchApplicationTests {
 		// 1.指定检索条件 DSL
 		SearchSourceBuilder builder = new SearchSourceBuilder();
 		// 1.1 构造检索条件
-		builder.query(QueryBuilders.matchQuery("address","mill"));
+		builder.query(QueryBuilders.matchQuery("address","Street"));
 
 		// 1.2 按照年龄值聚合
 		TermsAggregationBuilder ageAgg = AggregationBuilders.terms("ageAgg").field("age").size(10);

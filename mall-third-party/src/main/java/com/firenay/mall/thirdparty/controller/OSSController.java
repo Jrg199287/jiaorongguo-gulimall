@@ -36,7 +36,7 @@ public class OSSController {
 	@Value("${spring.cloud.alicloud.access-key}")
 	private String accessId;
 	private PolicyConditions policyConds;
-
+//web上传oss生成签名
 	@RequestMapping("/third/party/oss/policy")
 	public R policy() {
 		String host = "https://" + bucket + "." + endpoint; // host的格式为 bucketname.endpoint

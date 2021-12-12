@@ -5,5 +5,5 @@ package com.firenay.common.valid;
  * Description：新增分组
  * date：2020/6/1 21:52
  */
-public interface AddGroup {
+public interface AddGroup  {
 }
